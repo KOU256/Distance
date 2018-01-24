@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="text/javascript" src="distance.js"></script>
+	<title>ヒュベニの式</title>
+</head>
+<body>
+	<h1>2地点間の距離計算<br></h1>
+	<form name="input_form" action="distance.js">
+		<h3>第1地点</h3>
+		<p>緯度 <input type="text" name="first_latitude"></p>
+		<p>経度 <input type="text" name="first_logitude"></p>
+		<h3>第2地点</h3>
+		<p>緯度 <input type="text" name="second_latitude"></p>
+		<p>経度 <input type="text" name="second_logitude"></p>
+		<input type="button" value="計算" onclick="calculateDistance()">
+		</form>
+	<form name="output_form" action="distance.js">
+		<p>結果 <input type="text" name="distance" >m</p>
+	</form>
+</body>
+</html>
